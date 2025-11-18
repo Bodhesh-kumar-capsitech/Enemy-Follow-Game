@@ -23,7 +23,7 @@ public class EnemyController : MonoBehaviour
         Vector3 playerPos = playerPrefab.transform.position;
 
         
-        transform.position = Vector3.MoveTowards(transform.position, playerPrefab.transform.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, playerPos, speed * Time.deltaTime);
 
         float x = Mathf.Clamp(transform.position.x,-rangeX,rangeX);
         float z = Mathf.Clamp(transform.position.z,-rangeZ,rangeZ);
