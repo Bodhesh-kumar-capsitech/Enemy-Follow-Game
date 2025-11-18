@@ -16,7 +16,6 @@ public class EnemyBulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
         transform.Translate(Vector3.forward * bulletSpeed * Time.deltaTime);
 
@@ -39,7 +38,5 @@ public class EnemyBulletController : MonoBehaviour
             Destroy(gameObject);
             controller.hitcount++;
         }
-
-        
     }
 }
